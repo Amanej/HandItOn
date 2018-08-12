@@ -1,0 +1,194 @@
+[
+    {
+        "name": "iPhone X",
+        "id": "90dssc",
+        "images": [
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/APPIPX64BK_2?$fullsize$",
+                "main": true
+            },
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/APPIPX64BK_1?$fullsize$",
+                "main": false
+            },
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/APPIPX64BK?$fullsize$",
+                "main": false
+            }
+        ],
+        "category": "mobiler",
+        "pris": 6000
+    },
+    {
+        "name": "iPhone 8",
+        "id": "sc9s32sc",
+        "images": [
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/APPIPX64BK_2?$fullsize$",
+                "main": true
+            },
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/APPIPX64BK_1?$fullsize$",
+                "main": false
+            },
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/APPIPX64BK?$fullsize$",
+                "main": false
+            }
+        ],
+        "category": "mobiler",
+        "pris": 6000
+    },
+    {
+        "name": "Samsung Galaxy S8",
+        "id": "cs53sc",
+        "images": [
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/APPIPX64BK_2?$fullsize$",
+                "main": true
+            },
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/APPIPX64BK_1?$fullsize$",
+                "main": false
+            },
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/APPIPX64BK?$fullsize$",
+                "main": false
+            }
+        ],
+        "category": "mobiler",
+        "pris": 6000
+    },
+    {
+        "name": "Samsung Galaxy S10",
+        "id": "sscd87c",
+        "images": [
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/APPIPX64BK_2?$fullsize$",
+                "main": true
+            },
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/APPIPX64BK_1?$fullsize$",
+                "main": false
+            },
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/APPIPX64BK?$fullsize$",
+                "main": false
+            }
+        ],
+        "category": "mobiler",
+        "pris": 6000
+    },
+    {
+        "name": "MacBook Pro 15",
+        "id": "0s9csd",
+        "images": [
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/MACBPMPTR2HA?$fullsize$",
+                "main": true
+            },
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/MACBPMPTR2HA_1?$fullsize$",
+                "main": false
+            },
+            {
+                "url": "https://tubby.scene7.com/is/image/tubby/MACBPMPTR2HA_2?$fullsize$",
+                "main": false
+            }
+        ],
+        "category": "laptop",
+        "pris": 24000
+    },
+    {
+        "name": "Louis Vuitton Neo Vivienne",
+        "id": "s8s9dcs",
+        "images": [
+            {
+                "url": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neo-vivienne-autres-high-end-handbags--M54676_PM2_Front%20view.jpg",
+                "main": true
+            },
+            {
+                "url": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neo-vivienne-autres-high-end-handbags--M54676_PM1_Interior%20view.jpg",
+                "main": false
+            },
+            {
+                "url": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-vivienne-autres-high-end-handbags--M54443_PM2_Front view.jpg",
+                "metadata": {
+                    "color": "orange",
+                    "orientation": "front"
+                },
+                "main": false
+            },
+            {
+                "url": "https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-vivienne-autres-high-end-handbags--M54443_PM1_Interior view.jpg",
+                "metadata": {
+                    "color": "orange",
+                    "orientation": "top"
+                },
+                "main": false
+            }
+        ],
+        "category": "vesker",
+        "pris": 22000
+    },
+    {
+        "name": "Louis Vuitton Pochette Metis",
+        "id": "sc9swdcs3",
+        "images": [
+            {
+                "url": "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-pochette-metis-monogram-canvas-handbags--M40780_PM2_Front view.jpg",
+                "main": true
+            },
+            {
+                "url": "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-pochette-metis-monogram-canvas-handbags--M40780_PM1_Side view.jpg",
+                "main": false
+            },
+            {
+                "url": "https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-pochette-metis-monogram-canvas-handbags--M40780_PM1_Interior view.jpg",
+                "main": false
+            }
+        ],
+        "category": "vesker",
+        "pris": 19500
+    },
+    {
+        "name": "Ganni Silvery Crepe Wrap Dress",
+        "id": "s8s9dcs",
+        "images": [
+            {
+                "url": "https://www.ganni.com/dw/image/v2/AAWT_PRD/on/demandware.static/-/Sites-ganni-master-catalogue/default/dw7ad1958f/images/images/hi-res/F2472-415-1.jpg?sh=2000",
+                "main": true
+            },
+            {
+                "url": "https://www.ganni.com/dw/image/v2/AAWT_PRD/on/demandware.static/-/Sites-ganni-master-catalogue/default/dw9c1ece33/images/images/hi-res/F2472-415-3.jpg?sh=2000",
+                "main": false
+            },
+            {
+                "url": "https://www.ganni.com/dw/image/v2/AAWT_PRD/on/demandware.static/-/Sites-ganni-master-catalogue/default/dw1ad1aea5/images/images/hi-res/F2472-415-4.jpg?sh=2000",
+                "main": false
+            }
+        ],
+        "category": "kjoler",
+        "pris": 1800
+    },
+    {
+        "name": "Ganni Kochhar Mini Dress",
+        "id": "sc9w03fs",
+        "images": [
+            {
+                "url": "https://www.ganni.com/dw/image/v2/AAWT_PRD/on/demandware.static/-/Sites-ganni-master-catalogue/default/dw41e648b3/images/images/hi-res/F2794-403-1.jpg?sh=2000",
+                "main": true
+            },
+            {
+                "url": "https://www.ganni.com/dw/image/v2/AAWT_PRD/on/demandware.static/-/Sites-ganni-master-catalogue/default/dw11497efa/images/images/hi-res/F2794-403-2.jpg?sh=2000",
+                "main": false
+            },
+            {
+                "url": "https://www.ganni.com/dw/image/v2/AAWT_PRD/on/demandware.static/-/Sites-ganni-master-catalogue/default/dw34906d67/images/images/hi-res/F2794-403-3.jpg?sh=2000",
+                "main": false
+            }
+        ],
+        "category": "kjoler",
+        "pris": 3500
+    }
+]
