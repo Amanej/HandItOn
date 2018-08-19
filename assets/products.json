@@ -16,6 +16,12 @@
                 "main": false
             }
         ],
+        "variations": [
+            {
+                "property": "Farge",
+                "values": ["Stellargrå","Svart"]
+            }
+        ],
         "category": "mobiler",
         "pris": 6000
     },

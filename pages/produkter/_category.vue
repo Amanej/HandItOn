@@ -2,11 +2,11 @@
     <div class="produktene">
         <p>Produktene du har valgt {{category}}</p>
         <ul>
-            <li v-for="product in products" :key="product.id">
+            <nuxt-link v-for="product in products" :key="product.id" :to="'produkt/'+product.name">
                 <img :src="product.images[0].url" />
                 <h2>{{product.name}}</h2>
                 <h4>Pris: {{product.pris}},-</h4>
-            </li>
+            </nuxt-link>
         </ul>
     </div>
 </template>
@@ -23,7 +23,7 @@ div.produktene {
     ul {
         width: 100%;
         padding-left: 0;
-        li {
+        a {
             width: 50%;
             list-style: none;
             display: inline-block;
@@ -51,6 +51,9 @@ import products from '@/assets/products.json';
 //console.log(products);
 
 export default {
+    computed: {
+
+    },
     asyncData(context) {
         console.log("Params ",context.params.category);
         var matchedproducts = products.filter(p => p.category === context.params.category);
