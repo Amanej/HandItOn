@@ -50,6 +50,7 @@ div.produkt {
     //display: flex;
     display: block;
     float: left;
+    width: 100%;
     h1,h2 {
         font-weight: 100;
         padding-left: 10px;

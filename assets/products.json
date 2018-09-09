@@ -86,8 +86,9 @@
         "pris": 6000
     },
     {
-        "name": "MacBook Pro 15",
-        "id": "0s9csd",
+        "name": "MacBook Pro",
+        "slug": "macbook-pro",
+        "id": "0s9ssfes",
         "images": [
             {
                 "url": "https://tubby.scene7.com/is/image/tubby/MACBPMPTR2HA?$fullsize$",
@@ -102,8 +103,39 @@
                 "main": false
             }
         ],
+        "attributes": [
+            "årsmodell",
+            "skjermstørrelse",
+            "farge"
+        ],
+        "variations": [
+            {
+                "attributes": {
+                    "årsmodell": 2018,
+                    "skjermstørrelse": 13,
+                    "farge": "grå"
+                },
+                "pris": 25000
+            },
+            {
+                "attributes": {
+                    "årsmodell": 2017,
+                    "skjermstørrelse": 13,
+                    "farge": "grå"
+                },
+                "pris": 23000
+            },
+            {
+                "attributes": {
+                    "årsmodell": 2016,
+                    "skjermstørrelse": 13,
+                    "farge": "grå"
+                },
+                "pris": 16000
+            }
+        ],
         "category": "laptop",
-        "pris": 24000
+        "pris": 22000
     },
     {
         "name": "Louis Vuitton Neo Vivienne",
@@ -159,7 +191,7 @@
     },
     {
         "name": "Ganni Silvery Crepe Wrap Dress",
-        "id": "s8s9dcs",
+        "id": "s8s9fgs",
         "images": [
             {
                 "url": "https://www.ganni.com/dw/image/v2/AAWT_PRD/on/demandware.static/-/Sites-ganni-master-catalogue/default/dw7ad1958f/images/images/hi-res/F2472-415-1.jpg?sh=2000",
