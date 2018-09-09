@@ -33,18 +33,19 @@
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 -->
                 <h3>Egenskaper</h3>
-                Super Retina HD-skjerm<br/>
-                5,8-tommers (diagonalt) OLED Multi‑Touch-skjerm som dekker hele forsiden<br/>
-                HDR-skjerm<br/>
-                Oppløsning på 2436 x 1125 ved 458 ppi<br/>
-                Kontrastforhold på 1 000 000:1 (normal)<br/>
-                True Tone-visning<br/>
-                Skjerm med stort fargerom (P3)<br/>
-                3D Touch<br/>
-                625 cd/m2 maksimum lysstyrke (normal)<br/>
-                Fingeravtrykk­bestandig, oljeavstøtende belegg<br/>
-                Støtte for visning av flere språk og tegnsett samtidig<br/>
-
+                <ul>
+                    <li>Super Retina HD-skjerm</li>
+                    <li>5,8-tommers (diagonalt) OLED Multi‑Touch-skjerm som dekker hele forsiden</li>
+                    <li>HDR-skjerm</li>
+                    <li>Oppløsning på 2436 x 1125 ved 458 ppi</li>
+                    <li>Kontrastforhold på 1 000 000:1 (normal)</li>
+                    <li>True Tone-visning</li>
+                    <li>Skjerm med stort fargerom (P3)</li>
+                    <li>3D Touch</li>
+                    <li>625 cd/m2 maksimum lysstyrke (normal)</li>
+                    <li>Fingeravtrykk­bestandig, oljeavstøtende belegg</li>
+                    <li>Støtte for visning av flere språk og tegnsett samtidig</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -132,7 +133,17 @@ div.produkt {
                 }
             }
             div.description {
-                padding: 10px;                
+                padding: 10px;            
+                h3 {
+                    font-weight: 400;
+                    text-decoration: underline;
+                }
+                ul {
+                    padding-left: 0;
+                    li {
+                        list-style-type: none;
+                    }
+                }
             }
         }
     }
