@@ -4,18 +4,24 @@
         <h2>Apple</h2>-->
         <div class="images">
             <!-- Images -->
-            <img v-for="image in images" :src="image.src" :key="image.key" />
+            <img v-for="(image,index) in product.images" :src="image.url" :key="index" />
         </div>
         <div class="productInfo">
-            <h1>iPhone X</h1>
+            <h1>{{product.name}}</h1>
             <h4>Apple</h4>
-            <h2>Pris: 9500,-</h2>
+            <h2>Pris: {{product.pris}},-</h2>
             <div class="productSelection">
-                <select name="selectColor" class="selectColor">
+                <!--<select name="selectColor" class="selectColor">
                     <option disabled default>Velg en farge</option>
                     <option value="stellergrå">Stellargrå</option>
                     <option value="svart">Svart</option>
-                </select>
+                </select>-->
+                <div class="selector" v-if="product.attributes" v-for="attribute in product.attributes" :key="attribute.name">
+                    <label for="">Velg {{attribute.name}}</label>
+                    <select :name="attribute.name">
+                        <option v-for="val in attribute.values" :key="val">{{val}}</option>
+                    </select>
+                </div>
                 <button class="addToCart">Kjøp nå</button>
             </div>
             <div class="description">
@@ -89,12 +95,28 @@ div.produkt {
             width: 100%;
             @media only screen and (min-width: 600px) {
                 width: 40%;
-                //width: 55%;
+
+                position: sticky;
+                top: 5%;
             }
             div.productSelection {
                 padding: 10px;
+                padding-top: 0;
+                div.selector {
+                    padding: 5px 0;
+                    label {
+                        padding-left: 5px;
+                    }
+                    select {
+                        //font-size: 16px;
+                    }
+                }
                 select {
                     margin: 5px 5px 5px 0px;
+                    display: block;
+                    min-width: 150px;
+                    font-weight: 100;
+                    //font-size: 18px;
                 }
                 button {
                     display: block;
@@ -118,7 +140,16 @@ div.produkt {
 </style>
 
 <script>
+import products from '@/assets/products.json';
+
 export default {
+    asyncData(context) {
+        var product = products.filter(p => p.slug === context.params.slug)[0];
+        console.log("Product ",product);
+        return {
+            product: product
+        }
+    },
     data: function() {
         return {
             images: [

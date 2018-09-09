@@ -108,9 +108,18 @@
             }
         ],
         "attributes": [
-            "årsmodell",
-            "skjermstørrelse",
-            "farge"
+            {
+                "name":"årsmodell",
+                "values": [2016, 2017, 2018]
+            },
+            {
+                "name":"skjermstørrelse",
+                "values": [13, 15]
+            },
+            {
+                "name":"farge",
+                "values": ["grå", "sort"]
+            }
         ],
         "variations": [
             {
