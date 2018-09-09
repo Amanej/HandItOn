@@ -4,18 +4,8 @@
     <p>Å selge sine brukte ting, trenger ikke å innebære masse chatting, pruting og å møte folk når det ikke passer. Simpelthen registrer deg og send oss produktet når det er solgt. </p>
     <h3>Jeg vil selge</h3>
     <p>Klikk på produktet du ønsker å selge via HandItOn</p>
-    <!--
-    <a href="https://aman305.typeform.com/to/jFD1bh">iPhone X</a>
-    <a href="https://aman305.typeform.com/to/jFD1bh">MacBook Pro</a>
-    -->
 
-    <!--
-    <a href="https://aman305.typeform.com/to/jFD1bh">Samsung Galaxy</a>
-    <a href="https://aman305.typeform.com/to/jFD1bh">Louis Vuitton</a>
-    <a href="https://aman305.typeform.com/to/jFD1bh">Ganni Kjole</a>
-    -->
-
-    <a href="https://aman305.typeform.com/to/jFD1bh" v-for="product in products" :key="product.id">
+    <a target="_blank" href="https://aman305.typeform.com/to/jFD1bh" v-for="product in products" :key="product.id">
         <img :src="product.images[0].url" />
         <h4>{{product.name}}</h4>
     </a>

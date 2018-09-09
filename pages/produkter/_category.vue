@@ -2,7 +2,7 @@
     <div class="produktene">
         <p>Produktene du har valgt {{category}}</p>
         <ul>
-            <nuxt-link v-for="product in products" :key="product.id" :to="'produkt/'+product.name">
+            <nuxt-link v-for="product in products" :key="product.id" :to="'/produkt/'+product.slug">
                 <img :src="product.images[0].url" />
                 <h2>{{product.name}}</h2>
                 <h4>Pris: {{product.pris}},-</h4>
