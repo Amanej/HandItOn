@@ -8,10 +8,10 @@
             <div class="part product">
                 <img src="https://tubby.scene7.com/is/image/tubby/APPIPX64BK_2?$fullsize$" />
                 <div class="info">
-                    <h3>Iphone X</h3>
+                    <h3>{{product.name}}</h3>
                     <h4 class="detail"><span class="property">Farge:</span> Sølvgrå</h4>
                     <h4 class="detail"><span class="property">Minne:</span> 64 gb</h4>
-                    <h5 class="price"><span class="property">Pris:</span> 7500,-</h5>
+                    <h5 class="price"><span class="property">Pris:</span> {{product.pris}},-</h5>
                 </div>
             </div>
             <div class="part shipment">
@@ -52,6 +52,8 @@
 </template>
 
 <script>
+import products from '@/assets/products.json';
+
 export default {
     methods: {
         completeOrder: function() {
@@ -67,6 +69,17 @@ export default {
                 return true
             }
             return false
+        }
+    },
+    asyncData(context) {
+        console.log("Context ",context.route.query.slug);
+        var _product = context.route.query.slug;
+        console.log("Product ",_product);
+
+        var product = products.filter(p => p.slug === _product)[0];
+        console.log("Product ",product);
+        return {
+            product: product
         }
     },
     data() {

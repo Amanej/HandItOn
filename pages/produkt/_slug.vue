@@ -159,7 +159,7 @@ export default {
             // Add to state
             console.log("Product ",this.product);
             // Re-route
-            this.$router.push("/checkout");
+            this.$router.push("/checkout?slug="+this.product.slug);
         }
     },
     asyncData(context) {
