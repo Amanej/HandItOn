@@ -2,7 +2,7 @@
   <section class="container">
     <div class="splash">
       <h1>Hand It On</h1>
-      <p>Kjøp og selg </br> brukte merkevarer</p>
+      <p>Kjøp og selg <br/> brukte merkevarer</p>
     </div>
     <div class="sellingPoints">
       <div>

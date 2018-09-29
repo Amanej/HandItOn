@@ -1,12 +1,15 @@
 <template>
     <footer>
         <!--<p>Here is a footer</p>-->
-        <h3>Hand It On</h3>
+        <h3>Hand It On 2018</h3>
+        <!--
         <h4>Kvalitetsprodukter til gode priser</h4>
         <ul class="row firstRow">
             <li>Alle produkter er kvalitetsikret</li>
             <li>Kjøp brukt raskt, enkelt og trygt</li>
         </ul>
+        -->
+        <a href="https://amanmender.com">By Aman</a>
     </footer>
 </template>
 
@@ -40,6 +43,9 @@ footer {
         li {
             color: white;
         }
+    }
+    a {
+        color: white;
     }
 }
 </style>

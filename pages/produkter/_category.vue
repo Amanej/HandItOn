@@ -1,14 +1,8 @@
 <template>
-    <div class="produktene">
-        <p>Produktene du har valgt {{category}}</p>
-        <ul>
-            <nuxt-link v-for="product in products" :key="product.id" :to="'/produkt/'+product.slug">
-                <img :src="product.images[0].url" />
-                <h2>{{product.name}}</h2>
-                <h4>Pris: {{product.pris}},-</h4>
-            </nuxt-link>
-        </ul>
-    </div>
+    <ProductsList 
+        :products="products" 
+        :category="category"
+    />
 </template>
 
 <style lang="scss" scoped>
@@ -47,12 +41,13 @@ div.produktene {
 
 <script>
 import products from '@/assets/products.json';
+import ProductsList from '~/components/Products/Products';
 
-//console.log(products);
+console.log(products);
 
 export default {
-    computed: {
-
+    components: {
+        ProductsList
     },
     asyncData(context) {
         console.log("Params ",context.params.category);
