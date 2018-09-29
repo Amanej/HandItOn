@@ -14,11 +14,13 @@
         <p>Alle varene blir personlig inspisert, og må ha kvittering i tillegg til å være i god stand. </p>
       </div>
     </div>
+    <!-- Products -->
+    <!-- Brands -->
+    <!--
     <div class="selection">
       <h2>Utvalg</h2>
-      <!-- Products -->
-      <!-- Brands -->
     </div>
+    -->
   </section>
 </template>
 

@@ -17,9 +17,8 @@
 footer {
     padding: 20px;
     background: white;
-    border-top: 1px solid lightgrey;    
-
-    margin-top: 20px;
+    //border-top: 1px solid lightgrey;    
+    //margin-top: 20px;
     display: block;
     float: left;
     width: 100%;
