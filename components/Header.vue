@@ -22,6 +22,7 @@ nav {
     a {
         color: white;
         margin: 5% 15%;
+        text-decoration: none;
     }
     div {
         display: inline-block;

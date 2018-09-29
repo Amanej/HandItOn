@@ -1,9 +1,23 @@
 <template>
   <section class="container">
-    <div>
-      <!--<logo/>-->
-      <h2>Hand It On</h2>
-      <p>Enkelt shopp og selg brukt klær og elektronikk</p>
+    <div class="splash">
+      <h1>Hand It On</h1>
+      <p>Kjøp og selg </br> brukte merkevarer</p>
+    </div>
+    <div class="sellingPoints">
+      <div>
+        <h2>Kvalitetsprodukter varer</h2>
+        <p>Vi overøses i billig varer, men kvalitetsprodukter er de som varer. Når du kjøper de brukt, sparer du lommeboka på langsikt.</p>
+      </div>
+      <div>
+        <h2>Kjøp brukte varer raskt, og enkelt</h2>
+        <p>Alle varene blir personlig inspisert, og må ha kvittering i tillegg til å være i god stand. </p>
+      </div>
+    </div>
+    <div class="selection">
+      <h2>Utvalg</h2>
+      <!-- Products -->
+      <!-- Brands -->
     </div>
   </section>
 </template>
@@ -18,34 +32,53 @@ export default {
 }
 </script>
 
-<style>
-.container
-{
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+<style lang="scss" scoped>
+div.splash {
+  background: linear-gradient(rgba(83, 83, 83, 0.4),rgba(83, 83, 83, 0.4)),url('~/assets/images/brands/apple/macbook/macbook.jpg') no-repeat center;
+  background-size: 80%;
   text-align: center;
+  padding: 15%;
+  color: white;
+  font-family: 'Cambria';
+
+  width: 100%;
+  float: left;  
+  h1 {
+    font-size: 64px; //2em;
+  }
+  p {
+    font-size: 26px; //1.4em;
+  }
 }
-.title
-{
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+div.sellingPoints {
+  width: 100%;
+  float: left;
+  div {
+    background: #6A6969;
+    width: 50%;
+    display: block;
+    float: left;
+    color: white;
+    text-align: center;
+    height: 400px;
+    padding: 10% 5%;
+    h2 {
+      font-weight: 500;
+    }
+    p {
+      padding: 20px 40px;
+      font-size: 1.2em;
+    }
+  }
 }
-.subtitle
-{
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-.links
-{
-  padding-top: 15px;
+div.selection {
+  width: 100%;
+  float: left;
+
+  padding: 20px;
+  h2 {
+    text-align: center;
+    font-weight: 500;
+  }
 }
 </style>

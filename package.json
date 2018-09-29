@@ -5,7 +5,7 @@
   "author": "Aman Mender",
   "private": true,
   "scripts": {
-    "devAltHost": "HOST=8780 nuxt",
+    "devAltHost": "PORT=8780 nuxt",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",

@@ -23,10 +23,13 @@
 
 <style lang="scss" scoped>
 div.om {
-    padding: 20px;
+    padding: 40px 20px;
     width: 80%;
     margin-left: 10%;
     margin-top: 5%;
+
+    width: 100%;
+    margin: 0;    
     h1 {
         text-align: center;
         font-weight: 100;
