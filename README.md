@@ -20,3 +20,20 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+
+
+## Project
+
+### Payment
+Create checkout process where payment is authorized but not captured. 
+Orders are put into strapi.
+Make product page and checkout page, more safe.
+
+### Improve sell and frontpage
+
+Sell looks bad.
+Frontpage needs to look more like about.
+
+### Footer - improved design
+### Product page - improved design
+### Products - improved design
