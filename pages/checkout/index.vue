@@ -16,18 +16,18 @@
             </div>
             <div class="part shipment">
                 <h3>Forsendelse</h3>
-                <input type="text" name="name" class="name" placeholder="Ditt navn" />
-                <input type="text" name="adresse" class="adresse" placeholder="Adresse" />
-                <input type="text" name="postnr" class="postnr" placeholder="Postnr" />
-                <input type="text" name="sted" class="sted" placeholder="Sted" />
+                <input type="text" name="name" class="name" v-model="shipping.name" placeholder="Ditt navn" />
+                <input type="text" name="adresse" class="adresse" v-model="shipping.address" placeholder="Adresse" />
+                <input type="text" name="postnr" class="postnr" v-model="shipping.postal" placeholder="Postnr" />
+                <input type="text" name="sted" class="sted" v-model="shipping.area" placeholder="Sted" />
                 <label for="pickup">
-                    <input type="checkbox" name="pickup" class="pickup" id="pickup" />Hent i Oslo Sentrum
+                    <input type="checkbox" name="pickup" class="pickup" v-model="shipping.method" id="pickup" />Hent i Oslo Sentrum
                 </label>
             </div>
         </div>
         
 
-        <div class="row">
+        <div class="row" v-if="shippingInfoCompleted">
             <div class="part payment">
                 <h3>Betal med kort</h3>
                 <input type="text" name="kortnummer" class="kortnummer" />
@@ -37,7 +37,7 @@
             </div>
             <div class="part finish">
                 <h2>Totalt: 7500 kr</h2>
-                <button class="complete">Fullfør</button>
+                <button class="complete" @click="completeOrder">Fullfør</button>
             </div>
         </div>
         <div class="assurance">
@@ -51,8 +51,39 @@
     </div>
 </template>
 
-<style lang="scss" scoped>
+<script>
+export default {
+    methods: {
+        completeOrder: function() {
+            console.log("Complete order");
+            // Process payment
+            // Send order to API
+        }
+    },
+    computed: {
+        shippingInfoCompleted: function() {
+            var shipping = this.shipping;
+            if(shipping.name && shipping.address && shipping.postal && shipping.area) {
+                return true
+            }
+            return false
+        }
+    },
+    data() {
+        return {
+            shipping: {
+                name: "",
+                address: "",
+                postal: "",
+                area: "",
+                method: false
+            }
+        }
+    }
+}
+</script>
 
+<style lang="scss" scoped>
 div.checkout {
     margin: 2% 5%;
     padding: 20px;
@@ -183,5 +214,4 @@ div.checkout {
         }
     }
 }
-
 </style>

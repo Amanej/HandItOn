@@ -18,11 +18,11 @@
                 </select>-->
                 <div class="selector" v-if="product.attributes" v-for="attribute in product.attributes" :key="attribute.name">
                     <label for="">Velg {{attribute.name}}</label>
-                    <select :name="attribute.name">
+                    <select :name="attribute.name" :value="selectedAttribute">
                         <option v-for="val in attribute.values" :key="val">{{val}}</option>
                     </select>
                 </div>
-                <button class="addToCart">Kjøp nå</button>
+                <button @click="addToCart" class="addToCart">Kjøp nå</button>
             </div>
             <div class="description">
                 <!-- Beskrivelse -->
@@ -154,6 +154,14 @@ div.produkt {
 import products from '@/assets/products.json';
 
 export default {
+    methods: {
+        addToCart: function() {
+            // Add to state
+            console.log("Product ",this.product);
+            // Re-route
+            this.$router.push("/checkout");
+        }
+    },
     asyncData(context) {
         var product = products.filter(p => p.slug === context.params.slug)[0];
         console.log("Product ",product);
@@ -163,6 +171,7 @@ export default {
     },
     data: function() {
         return {
+            selectedAttribute: "",
             images: [
                 {
                     key: 24234234,
